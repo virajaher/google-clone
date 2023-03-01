@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*All elements should have a border-box*/
+}
+body {
+    font-family: 'Google Sans', sans-serif;
+    font-weight: 400;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Header Section */
+
+header  {
+    /* border: 1px solid blue; */
+    height: 60px;
+}
+
+.navbar { 
+    height: 100%;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.navbar ul { 
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 14px;
+}
+
+.navbar ul li { 
+    margin-left: 15px;
+}
+
+.navbar ul li a { 
+    color: black;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.circle-shadow {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-shadow:hover { 
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.menu-icon, .user-icon span { 
+    font-size: 18px;
+    color: white;
+}
+.user-icon span {
+    color: white;
+}
+
+.user-icon {
+    background-color: #6156f0;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+/* Content Section */
+
+.content-section { 
+    /* border: 1px solid blue; */
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-wrapper { 
+    /* border: 1px solid blue; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.logo-img { 
+    width: 300px;
+    margin-bottom: 25px;
+}
+
+.search-bar { 
+    border: 1px solid lightgray;
+    width: 600px;
+    height: 45px;
+    display: flex;
+    border-radius: 30px;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.search-bar:hover {
+    box-shadow: 0px 0px 2px 4px #f3f3f3;
+}
+
+.search-bar i {
+    font-size: 18px;
+    color: gray;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    height: 30px;
+    margin-right: 15px;
+    font-size: 16px;
+    border: none;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-btns {
+    margin-top: 25px;
+}
+
+.search-btns button { 
+    height: 40px;
+    font-size: 14px;
+    border:none;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: black;
+    background-color: #f2f3f4;
+}
+
+.search-btns button:hover {
+    border: 1px solid lightgray;
+}
+
+.search-btn {
+    width: 120px;
+}
+
+.lucky-btn {
+    width: 140px;
+}
+
+.language { 
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.language p a {
+    color: #2363ee;
+    margin-right: 4px;
+
+}
+
+.language p a:hover { 
+    text-decoration: underline;
+}
+
+
+/* Footer Section */
+
+footer {
+    background-color: #f2f2f2;
+    height: 100px;
+}
+
+.footer-content { 
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.upper-footer { 
+    height: 50%;
+    border-bottom: 1px solid lightgray;
+    margin-left: 15px;
+
+}
+
+.upper-footer a {
+    color: gray;
+    font-size: 14px;
+    cursor: text;
+}
+
+
+.lower-footer {
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lower-footer ul li a { 
+    font-size: 14px;
+    color: gray;
+}
+
+.lower-footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.lower-left-footer {
+    display: flex;   
+}
+
+.lower-left-footer li a { 
+    margin-left: 15px;
+}
+
+.lower-right-footer { 
+    display: flex;
+}
+
+.lower-right-footer li { 
+    margin-left: 15px;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 650px) {
+    .navbar ul {
+        font-size: 10px;
+    }
+
+    .menu-icon,
+    .user-icon span {
+        font-size: 14px;
+    }
+
+    .circle-shadow {
+        height: 30px;
+        width: 30px;
+    }
+
+   .logo-img {
+    height: 65px;
+    width: 200px;
+}
+
+    .search-bar { 
+        width: 90%;
+        height: 35px;
+    }
+
+    .search-bar i { 
+        font-size: 14px;
+    }
+
+    .search-btns button {
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .search-btn {
+        width: 100px;
+    }
+
+    .lucky-btn {
+        width: 120px;
+    }
+
+    .language {
+        font-size: 12px;
+    }
+
+    footer {
+        height: 150px;
+    }
+
+    .upper-footer {
+        height: 50px;
+    }
+
+    .lower-footer {
+        height: 100px;
+        flex-direction: column;
+    }
+}
